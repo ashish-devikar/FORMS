@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0a44410d99.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+body{
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(image/image10.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 730px;
+    
+    }
+  .navbar{
+          margin-right: 20px;
+          float: right;
+          margin-top: -60px;
+       }
+       .navbar ul li{
+        list-style: none;
+        display:inline-block;
+        margin: 10px;
+        padding: 15px;
+        position: relative;
+       }
+       .navbar ul li a{
+        text-decoration: none;
+        color:#fff;
+        text-transform: uppercase;
+        margin-top: 60px;
+       }
+       .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background:#00FA9A;
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        transition: 0.5s;
+       } 
+       .navbar ul li:hover::after{
+         width: 100%;
+       }
+.head{
+      height:100px;
+      width:100%;
+      background: rgba(0,0,0,0.3);
+     }  
+h2{
+      font-size: 25px;
+      color: aliceblue;
+      font-family: fantasy;
+   }
+h5{
+      font-size: 15px;
+      color: azure;
+      font-family:Verdana ;
+    }
+.header{
+       margin-left: 102px;
+       margin-top: -108px;
+       width: 100%;
+       }
+h1{
+       margin-top: 60px;
+       text-align: center;
+       font-size: 40px;
+       text-shadow: 2px 1px 5px black;
+       font-weight: 600;
+       color:white;
+       font-family: Franklin Gothic;
+       letter-spacing: 2px;
+       word-spacing: 20px;
+      }
+.box{
+     margin-top:100px;
+     background-color:	#DCDCDC;
+     border:1px solid #696969;
+     border-radius:10px;
+    }
+.form-control{
+     width:100%;
+	 border-radius:5px;
+	 padding:0 10px;
+	 box-sizing:border-box;
+	 outline:none;
+	 text-align:center;
+    }
+::placeholder{
+    text-align:center;
+    color: #aaa;
+    font-weight: 500;
+    }
+.input-name {
+     margin-right:10px;
+    }
+.input-name i{
+    position: absolute;
+    padding: 8px;
+    font-size: 15px;
+    color: blue;
+    border-right: 1px solid #cccccc;
+    }
+ h4{
+   font-size:35px;
+   margin:20px;
+   text-align:center;
+   color:#2F4F4F;
+      font-weight:600;
+   font-family: Franklin Gothic;
+   }
+ .imge{
+   margin-left:5px;
+   margin-top:5px;
+   margin-bottom:5px;
+   }
+.bttn{
+   text-align:center;
+   font-size:30px;
+   font-weight:500;
+   margin-bottom:10px;
+   }
+p{
+   text-align:center;
+}
+</style>
+</head>
+<body>
+<body>
+  <div class="head">
+     <div class="row">
+        <div class="col-md-12">
+            <header>
+               <div class="header_nav">
+                       <div class="logo"><img src="image/hvpm.png" alt="" width="100px" height="100px"></div>
+                   <div class="header">
+                        <a href="index.html" class=""> </a><h5>SHREE H.V.P. MANDAL'S</h5>
+                            <h2> P.G. DEPARTMENT OF COMPUTER SCIENCE & TECHNOLOGY</h2>
+                            <h5> DEGREE COLLEGE OF PHYSICAL EDUCATION</h5>
+                    </div>
+                    <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        
+                    </ul>
+                    </div>
+                </div>
+            </header>
+          </div>
+       </div>
+   </div>
+   <div class="container">
+       <div class="row">
+          <div class="col-md-2">
+          </div>
+           <div class="col-md-8">
+              <div class="box">
+                 <div class="row">
+                     <div class="col-md-6">
+                        <div class="imge">
+                           <img src="image/image3.png" class="rounded float-start" width="370px" height="350px">
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+       <form action="login" method="post">
+                    <h4>Login</h4>
+                    <div class="input-name">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" class="form-control" name="email" placeholder="Enter Email" required>
+                    </div></br>
+                    <div class="input-name">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control" name="password" placeholder="Enter Password" required>
+                    </div></br>
+                    <div class="input-name">
+                        <label><a href="">Forgot Password?</a></label>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <div class="bttn">
+                        <input type="submit" class="btn btn-primary" value="Login">
+                     </div>
+                         <p>Don't have account?</p>
+                         <p> <a href="register.html">Create new Account</a></p>
+                    </div>
+        </form>
+                  </div>
+               </div>
+             </div>
+             <div class="col-md-2">
+             </div>
+          </div>
+       </div>
+</body>
+</html>
